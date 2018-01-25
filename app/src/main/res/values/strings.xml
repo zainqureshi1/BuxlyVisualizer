@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Buxly Visualizer</string>
+
+    <string name="welcome">Welcome</string>
+    <string name="rooms">Rooms</string>
+    <string name="colors">Colors</string>
+    <string name="products">Products</string>
+
+    <string name="welcome_text">Buxly Paints Limited shares a rich tradition of excellence in the paint industry with a history dating back to 1933 when its paints manufacturing activities started in the Sub Continent. Buxly Paints is the largest national paint manufacturing company in Pakistan with excellence in quality.</string>
+
+    <string name="lets_get_started">Lets get started!</string>
+
+    <string name="choose_a_room">Choose a Room</string>
+    <string name="next_select_colors">Next: Select Colors >></string>
+
+    <string name="select_a_wall">Select a Wall</string>
+    <string name="colors_symphony">Colors Symphony</string>
+    <string name="product_colors">Product Colors</string>
+
+    <string name="shades_of_color">Shades of %s<!--Color--></string>
+    <string name="colors_of_product">Colors of %s<!--Product--></string>
+
+    <string name="next_select_product">Next: Select Product >></string>
+
+    <string name="select_your_paint">Select your Paint</string>
+
+    <string name="product_name">Product Name</string>
+    <string name="product_description">Product Description</string>
+
+    <string name="learn_more">Learn More</string>
+    <string name="view_colors">View Colors</string>
+
+    <string name="press_back_again_to_exit">Press BACK again to exit</string>
+
+</resources>

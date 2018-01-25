@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="slight_opaque">#33333333</color>
+    <color name="slight_transparent">#AA000000</color>
+    <color name="gray">#D6D6D6</color>
+    <color name="dark_gray">#505050</color>
+    <color name="soft_green">#C0D890</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_1">#F5F5F5</color>
+    <color name="white_2">#EBEBEB</color>
+    <color name="white_3">#E1E1E1</color>
+
+    <color name="red">#FF0000</color>
+    <color name="red_1">#F50A0A</color>
+    <color name="red_2">#EB1414</color>
+    <color name="red_3">#E11E1E</color>
+
+    <color name="green">#00FF00</color>
+    <color name="green_1">#0AF50A</color>
+    <color name="green_2">#14EB14</color>
+    <color name="green_3">#1EE11E</color>
+
+    <color name="blue">#0000FF</color>
+    <color name="blue_1">#0A0AF5</color>
+    <color name="blue_2">#1414EB</color>
+    <color name="blue_3">#1E1EE1</color>
+
+    <color name="yellow">#FFFF00</color>
+    <color name="yellow_1">#F5F50A</color>
+    <color name="yellow_2">#EBEB14</color>
+    <color name="yellow_3">#E1E11E</color>
+
+    <color name="cyan">#00FFFF</color>
+    <color name="cyan_1">#0AF5F5</color>
+    <color name="cyan_2">#14EBEB</color>
+    <color name="cyan_3">#1EF5F5</color>
+
+    <color name="pink">#FF00FF</color>
+    <color name="pink_1">#F50AF5</color>
+    <color name="pink_2">#EB14EB</color>
+    <color name="pink_3">#E10AE1</color>
+
+    <color name="black">#000000</color>
+    <color name="black_1">#0A0A0A</color>
+    <color name="black_2">#141414</color>
+    <color name="black_3">#1E1E1E</color>
+
+</resources>

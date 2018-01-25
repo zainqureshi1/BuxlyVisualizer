@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ColorsFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutOptionsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/margin_small"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_tiny"
+            android:orientation="horizontal" >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/textViewProductColors"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:padding="@dimen/margin_tiny"
+                android:layout_marginRight="@dimen/margin_tiny"
+                android:gravity="center"
+                android:drawableLeft="@mipmap/drop_down_arrow"
+                android:lines="1"
+                android:text="@string/product_colors"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold"
+                android:background="@drawable/bordered_button" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/textViewSymphonyColors"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:padding="@dimen/margin_tiny"
+                android:gravity="center"
+                android:drawableRight="@mipmap/drop_down_arrow"
+                android:lines="1"
+                android:text="@string/colors_symphony"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold"
+                android:background="@drawable/bordered_button" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewWallsTray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutProductsTrayContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutOptionsContainer"
+        android:layout_above="@+id/imageViewNext"
+        android:background="@color/slight_transparent"
+        android:visibility="gone" >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewProductsTray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:scrollbars="vertical" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/recyclerViewProductsTray" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textViewColorsOfProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/colors_of_product"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutProductColorsTrayContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutColorsTrayContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutOptionsContainer"
+        android:layout_above="@+id/imageViewNext"
+        android:background="@color/slight_transparent"
+        android:visibility="gone" >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewColorsTray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:scrollbars="vertical" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/recyclerViewColorsTray" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textViewShadesOfColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/shades_of_color"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutSecondaryColorsTrayContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutPictureContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayoutOptionsContainer"
+        android:layout_above="@+id/imageViewNext"
+        android:layout_margin="@dimen/margin_tiny" />
+
+    <ImageView
+        android:id="@+id/imageViewSave"
+        android:layout_width="@dimen/tab_height"
+        android:layout_height="@dimen/tab_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:src="@drawable/button_save_image" />
+
+    <ImageView
+        android:id="@+id/imageViewNext"
+        android:layout_width="@dimen/tab_height"
+        android:layout_height="@dimen/tab_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:src="@drawable/button_select_product" />
+
+</RelativeLayout>
